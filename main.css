@@ -63,17 +63,17 @@ body{
 .header {
 	
 	text-align: center;
-	
-	font-size: 65px;
+    font-size: 65px;
+    min-width: 610px;
 }
-.hot {
-	color: #FE0F42;
-
+.hot{
+	color: #FE0A32;
 }
 .cold{
-	color: #2FC0FD;
-
+	color: #16BFFE;
 }
+
+
 .select{
 	text-align: center;
 	margin: 35px;
@@ -81,10 +81,27 @@ body{
 	padding: 5px;
 	letter-spacing: 1px;
 	font-size: 25px;
+	min-width: 610px;
+}
+#hider{
+	height:230px;
+	text-align: center;
+
+}
+#hot {
+	text-align: center;
+    margin: 0 auto;
+    display: none;
+}
+#cold{
+	text-align: center;
+	margin: 0 auto;
+	display: none;
+	
 }
 .guessBox{
 	text-align: center;
-	margin-left: 375px;
+	margin: auto;
 	height: 350px;
 	width: 500px;
 	border: 1px solid #efefef;
@@ -92,8 +109,10 @@ body{
     background:linear-gradient(#FE0F42, #2FC0FD);
 	border-radius:10px;
 	position: relative;
+	min-width: 865px;
 }
 .makeGuess{
+	text-align: center;
 	margin: 10px;
 	padding: 30px;
 	letter-spacing: 1.5px;

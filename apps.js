@@ -34,15 +34,23 @@ guess = $("#guess").val();
 	if (diff >1 && diff < 6){
 	   console.log ("HOT");
 	   $("#diff").text("Your HOT");
+	   $('#hot').hide();
+       $('#hot').show();
     } else if (diff > 6 && diff < 12 ){
 	   console.log("warm");
 	   $("#diff").text("Your Warm");
+	   $('#hot').hide();
+       $('#hot').show();
     } else if (diff >12 && diff <17) {
 	   console.log ("chilly");
 	   $("#diff").text("Your Chilly");
+	   $('#cold').hide();
+       $('#cold').show();
     } else if {diff>17){
        console.log("COLD");
        $("#diff").text("Your Cold");
+       $('#cold').hide();
+       $('#cold').show();
     } else{
     	$("#diff").text("");
     }

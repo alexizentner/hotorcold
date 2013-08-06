@@ -3,6 +3,8 @@ var guess;
 var count = 0;
 var rand = Math.floor(Math.random()*100) + 1;
 var diff;
+$('#hot').hide();
+$('#cold').hide();
 console.log ("right number is ", rand)
 $("#guess").focus(function(){
 	$("#message").text("");
@@ -32,18 +34,26 @@ guess = $("#guess").val();
 		$("#count").text(count + " Guesses");
 	}
 	diff=Math.abs(rand-guess)
-	if (diff >1 && diff < 6){
+	if (diff >=1 && diff < 6){
 	   console.log ("HOT");
 	   $("#diff").text("Your HOT");
-    } else if (diff > 6 && diff < 12 ){
+	   $('#cold').hide();
+       $('#hot').show();
+    } else if (diff >= 6 && diff < 12 ){
 	   console.log("warm");
 	   $("#diff").text("Your Warm");
-    } else if (diff >12 && diff <17) {
+	   $('#cold').hide();
+       $('#hot').show();
+    } else if (diff >=12 && diff <17) {
 	   console.log ("chilly");
 	   $("#diff").text("Your Chilly");
-    } else if(diff>17) {
+	   $('#hot').hide();
+       $('#cold').show();
+    } else if(diff>=17) {
        console.log("COLD");
        $("#diff").text("Your Cold");
+       $('#hot').hide();
+       $('#cold').show();
     } else{
     	$("#diff").text("");
 
@@ -55,6 +65,8 @@ guess = $("#guess").val();
     	$("#message").text("");
 	      $("#guess").val("");
 	      $("#diff").text("");
+	      $('#hot').hide();
+          $('#cold').hide();
 
     })
     $('#newgame').click(function(){
@@ -64,6 +76,8 @@ guess = $("#guess").val();
 	      $("#guess").val("");
 	      $("#diff").text("");
 	      $("#answer").text("");
+	      $('#hot').hide();
+          $('#cold').hide();
          rand = Math.floor(Math.random()*100)+1;
          console.log("right number is ", rand);
   
@@ -73,6 +87,8 @@ guess = $("#guess").val();
           $("#message").text("");
 	      $("#guess").val("");
 	      $("#diff").text("");
+	      $('#hot').hide();
+          $('#cold').hide();
   });
      
 
