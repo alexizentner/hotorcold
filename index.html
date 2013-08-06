@@ -1,0 +1,64 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+	<title> Hot or Cold</title>
+	<link type= "text/css" rel="stylesheet" href="main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/apps.js"></script> 
+
+</head>
+<body>
+ <header>
+         <img class="sun" src="images/sun and ice.jpg" alt="" width=175>
+         <img class="face" src="images/thCAK11F0D.jpg" alt="" width=175>
+		<div class="header">
+		   <h1> <br/><span class ="hot"> HOT </span> or <span class="cold"> COLD </span> ? </h1>
+        </div>
+	</header>
+	<div class="select">
+           <h3>Computer has selected a number between 1 and 100...</h3>
+    </div>
+<!-- animation pics-->
+    <div>
+         <img id="hot" src="images/fire.jpg" alt="">
+         <img id="cold" src="images/ice.jpg" alt="" width=305>
+     </div>   
+<!-- guess-box-->
+    <div class="guessBox">
+    	<div class="makeGuess">
+    	   <h5> Make Your Guess:</h5>
+   
+
+<!--person inputs guess -->
+        <input type="text" name="guess" id="guess" maxlength="3"  autocomplete="off">
+        <input type="button"  value="Submit" name="submit" id="submit" class="button">
+    <div>
+        <p id="count"></p>
+    	<p id="message"></p>
+        <p id="diff"></p>
+        <p id="answer"></p>
+    </div>
+    
+    <div id="reset">
+        
+            <input type="button" id="newgame" value="New Game" class="button"></input>
+            <input type="button" id ="endgame" value="End Game" class="button"></input>
+            <input type="button" id="Answer" value="Answer" class="button"></input>
+        </div>
+    </div>
+     </div>
+ <!--animate picture-->
+
+ <!--corner pictures -->       
+    <div id="footer">
+           <img class="head" src="images/thCAK11F0D.jpg" alt="" width=125>
+           <img class="ice" src="images/sun and ice.jpg" alt="" width=150>
+          
+    </div>
+    
+    
+
+
+</body>
+</html>
