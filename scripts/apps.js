@@ -21,7 +21,8 @@ guess = $("#guess").val();
 		$("#message").text("The magic number is lower");
 	} else {
 		$("#message").text("Congratulations!! You guessed the number!");
-		 
+		 $("#diff").text("");
+
 	     
     }
 	count = count + 1
@@ -40,9 +41,12 @@ guess = $("#guess").val();
     } else if (diff >12 && diff <17) {
 	   console.log ("chilly");
 	   $("#diff").text("Your Chilly");
-    } else {
+    } else if(diff>17) {
        console.log("COLD");
        $("#diff").text("Your Cold");
+    } else{
+    	$("#diff").text("");
+
     }
 	});
 	
