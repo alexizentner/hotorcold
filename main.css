@@ -50,6 +50,7 @@ table {
 body{
 	
 }
+/*top corner pics*/
 .face {
 	float:right;
 	
@@ -60,11 +61,12 @@ body{
 	
 	
 }
+/*title text*/
 .header {
 	
 	text-align: center;
-    font-size: 65px;
-    min-width: 610px;
+    font-size: 75px;
+    min-width: 960px;
 }
 .hot{
 	color: #FE0A32;
@@ -72,21 +74,18 @@ body{
 .cold{
 	color: #16BFFE;
 }
-
-
 .select{
 	text-align: center;
-	margin: 35px;
-	margin-left: 95px;
-	padding: 5px;
+	margin: 30px auto;
+	padding: 8px;
 	letter-spacing: 1px;
-	font-size: 25px;
-	min-width: 610px;
+	font-size: 45px;
+	min-width: 960px;
 }
+/* hot/cold pics that show/hide*/
 #hider{
 	height:230px;
 	text-align: center;
-
 }
 #hot {
 	text-align: center;
@@ -97,8 +96,8 @@ body{
 	text-align: center;
 	margin: 0 auto;
 	display: none;
-	
 }
+/* making the box with buttons inside*/
 .guessBox{
 	text-align: center;
 	margin: auto;
@@ -111,6 +110,7 @@ body{
 	position: relative;
 	min-width: 865px;
 }
+/*input where they guess between 1-100*/
 .makeGuess{
 	text-align: center;
 	margin: 10px;
@@ -118,24 +118,29 @@ body{
 	letter-spacing: 1.5px;
 	font-size: 45px;
 }
+/*counter text*/
 #count {
 	margin: 10px;
 	font-size: 23px;
 	padding-right: 60px;
 }
+/* higher/lower text*/
 #message{
 	padding: 5px;
 	font-size: 28px;
 }
+/*hot/cold text*/
 #diff{
 	padding: 5px;
 	font-size: 50px;
 	color:#BBF252;
 }
+/* buttons new game/end game/answer*/
 #reset .button{
 	margin:10px;
 	padding:10px; 
 }
+/*bottom corner pics*/
 #footer{
 	
 }
