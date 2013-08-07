@@ -101,7 +101,7 @@ body{
 .guessBox{
 	text-align: center;
 	margin: auto;
-	height: 350px;
+	height: 420px;
 	width: 500px;
 	border: 1px solid #efefef;
 	padding: 10px;
@@ -123,22 +123,28 @@ body{
 	margin: 10px;
 	font-size: 23px;
 	padding-right: 60px;
+	
+}
 }
 /* higher/lower text*/
 #message{
 	padding: 5px;
 	font-size: 28px;
+	
 }
 /*hot/cold text*/
 #diff{
 	padding: 5px;
 	font-size: 50px;
 	color:#BBF252;
+	
+}
 }
 /* buttons new game/end game/answer*/
 #reset .button{
-	margin:10px;
-	padding:10px; 
+	margin-top:40px;
+	padding-top:20px;
+	 
 }
 /*bottom corner pics*/
 #footer{

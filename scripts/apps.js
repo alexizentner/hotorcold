@@ -6,15 +6,23 @@ $(document).ready(function() {
   var rand = Math.floor(Math.random()*100) + 1;
 // check that computer number generated in console 
   console.log ("right number is ", rand)
-// person playing guesses
+// person playing guesses number
 $("#guess").focus(function(){
-	$("#message").text("");
+	$("#message").text(" ");
 	$(this).val("");
 })
+//is guess is a number
 $("#submit").click(function(){
 	console.log("MADE A GUESS");
 //guess made and now told higher/lower/correct guess
+
    guess = $("#guess").val();
+   isGuess=$.isNumeric(guess);
+   if(!isGuess){
+   	$("#message").text("You must choose a Number between 1-100!");
+
+   	return(false);
+   }
 	if (guess < 0 || guess > 100){
 		$("#message").text ("You must choose between 1 and 100!");
 	} else if (guess<rand) {
@@ -24,7 +32,7 @@ $("#submit").click(function(){
 		$("#message").text("The magic number is lower");
 	} else {
 		$("#message").text("Congratulations!! You guessed the number!");
-		 $("#diff").text("");
+		 $("#diff").text(" ");
     }
 //count of guesses and printed
 	count = count + 1
@@ -56,16 +64,16 @@ $("#submit").click(function(){
        $('#hot').hide();
        $('#cold').show();
     } else{
-    	$("#diff").text("");
+    	$("#diff").text(" ");
 
     }
 	});
 // button to get answer and hide other text and pic
 	  $("#Answer").click(function(){
     	$("#answer").text("The Answer is " + rand);
-    	  $("#message").text("");
+    	  $("#message").text(" ");
 	      $("#guess").val("");
-	      $("#diff").text("");
+	      $("#diff").text(" ");
 	      $('#hot').hide();
           $('#cold').hide();
 
@@ -74,10 +82,10 @@ $("#submit").click(function(){
     $('#newgame').click(function(){
 	      count = 0
 	      $("#count").text("0 Guesses");
-	      $("#message").text("");
+	      $("#message").text(" ");
 	      $("#guess").val("");
-	      $("#diff").text("");
-	      $("#answer").text("");
+	      $("#diff").text(" ");
+	      $("#answer").text(" ");
 	      $('#hot').hide();
           $('#cold').hide();
          rand = Math.floor(Math.random()*100)+1;
@@ -86,9 +94,9 @@ $("#submit").click(function(){
 //button to endgame, get answer and hide text and pics
     $("#endgame").click(function(){
     	  $("#answer").text("The Answer is " + rand);
-          $("#message").text("");
+          $("#message").text(" ");
 	      $("#guess").val("");
-	      $("#diff").text("");
+	      $("#diff").text(" ");
 	      $('#hot').hide();
           $('#cold').hide();
   });
