@@ -11,18 +11,18 @@ $("#guess").focus(function(){
 	$("#message").text(" ");
 	$(this).val("");
 })
-//is guess is a number
+
 $("#submit").click(function(){
 	console.log("MADE A GUESS");
-//guess made and now told higher/lower/correct guess
 
+//is guess a number
    guess = $("#guess").val();
    isGuess=$.isNumeric(guess);
    if(!isGuess){
-   	$("#message").text("You must choose a Number between 1-100!");
+   	$("#message").text("You must choose between 1-100!");
 
    	return(false);
-   }
+   }    //guess made and now told higher/lower/correct guess
 	if (guess < 0 || guess > 100){
 		$("#message").text ("You must choose between 1 and 100!");
 	} else if (guess<rand) {

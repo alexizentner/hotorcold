@@ -62,6 +62,9 @@ body{
 	
 }
 /*title text*/
+#nav{
+	min-width: 960px;
+}
 .header {
 	
 	text-align: center;
@@ -120,9 +123,9 @@ body{
 }
 /*counter text*/
 #count {
-	margin: 10px;
-	font-size: 23px;
-	padding-right: 60px;
+	margin: 20px;
+	font-size: 31px;
+	text-align: center;
 	
 }
 }
@@ -134,20 +137,26 @@ body{
 }
 /*hot/cold text*/
 #diff{
-	padding: 5px;
-	font-size: 50px;
+	padding: 30px;
+	font-size: 70px;
 	color:#BBF252;
-	
 }
+/* text messages id*/
+#butt{
+	height:200px;
 }
+
 /* buttons new game/end game/answer*/
-#reset .button{
-	margin-top:40px;
-	padding-top:20px;
+#reset{
+	margin-bottom:0px;
+	height: 25px;
+	position: relative;
+
 	 
 }
 /*bottom corner pics*/
 #footer{
+	min-width: 960px;
 	
 }
 .head{
